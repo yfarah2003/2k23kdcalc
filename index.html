@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KD Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>KD Calculator</h1>
+  </header>
+
+  <div class="container">
+    <form id="kdForm">
+      <div class="form-group">
+        <label for="currentKd">Current KD:</label>
+        <input type="number" id="currentKd" step="0.01" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="kills">Kills:</label>
+        <input type="number" id="kills" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="deaths">Deaths:</label>
+        <input type="number" id="deaths" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="desiredKd">Desired KD:</label>
+        <input type="number" id="desiredKd" step="0.01" min="0" required>
+      </div>
+
+      <div class="form-group">
+        <label for="averageKd">Average KD per Game:</label>
+        <input type="number" id="averageKd" step="0.01" min="0" required>
+      </div>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 KD Calculator. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
